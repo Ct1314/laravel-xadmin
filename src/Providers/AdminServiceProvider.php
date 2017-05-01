@@ -8,6 +8,7 @@ namespace Admin\Providers;
 * date 2017/4/26
 */
 
+use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
 
 class AdminServiceProvider extends ServiceProvider
@@ -41,11 +42,18 @@ class AdminServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $loader = AliasLoader::getInstance();
+
+        $loader->alias('Flash',\Flash\FlashFacade::class);
+
         $this->setAuth();
 
         collect(config('admin.providers'))->each(function ($provider){
             $this->app->register($provider);
         });
+
+
+
         $this->commands($this->commands);
     }
 
