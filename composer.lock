@@ -1,0 +1,60 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "ee5c6715859fda2b95723e6815d2d166",
+    "packages": [
+        {
+            "name": "yuanchang/laravel-flash",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Ct1314/flash-message.git",
+                "reference": "8ada637c22200072493c2940ebda32b1eadb71ab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/Ct1314/flash-message/8ada637c22200072493c2940ebda32b1eadb71ab.zip",
+                "reference": "8ada637c22200072493c2940ebda32b1eadb71ab",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Flash\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "yuanchang",
+                    "email": "yuanchang.xu@outlook.com"
+                }
+            ],
+            "keywords": [
+                "flash",
+                "framework",
+                "message"
+            ],
+            "time": "2017-04-26T06:22:31+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.6.4"
+    },
+    "platform-dev": []
+}
